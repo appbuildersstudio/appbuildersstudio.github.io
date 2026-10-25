@@ -42,7 +42,7 @@ footer { margin-top: 3em; padding-top: 1.5em; border-top: 1px solid #ddd; color:
 <li>Device identifiers, analytics or crash reports</li>
 </ul>
 <h2>3. How the App Reads Your Screen</h2>
-<p>When a supported ride-hailing app is in the foreground, the App takes a momentary screenshot of the screen, reads the text on it on your device (OCR), calculates its indicators, and then discards the image. Screenshots are held in memory only. They are never saved, uploaded or shared. The App is designed to ignore other apps and content.</p>
+<p>When a supported ride-hailing app is in the foreground, the App takes a momentary screenshot of the screen, reads the text on it on your device (OCR), calculates its indicators, and then discards the image. Screenshots are held in memory only. They are never saved, uploaded or shared. The App is designed to ignore other apps and content. In split-screen mode, or during a quick app switch, the screenshot can include whatever else is visible on screen. It is read on your device only, only trip offer details are used, and the image is discarded straight away. Nothing is stored or sent.</p>
 <h2>4. Information Stored on Your Device</h2>
 <p>Shift earnings, mileage, GPS-derived distance, notes, trip history, targets and your settings are stored only in the App’s private storage on your device. Cloud and device backup of this data is switched off. If you uninstall the App or clear its data, it is permanently deleted and we cannot recover it.</p>
 <p>The App has an optional diagnostic log (off by default). If you switch it on, a text log with redacted trip details is stored on your device only. Nothing is sent to us.</p>
@@ -54,7 +54,7 @@ footer { margin-top: 3em; padding-top: 1.5em; border-top: 1px solid #ddd; color:
 <p><strong>Battery optimisation exemption</strong> — optional; helps stop Android from closing the App during a shift.</p>
 <p>The App never requests background location access.</p>
 <h2>6. Automatic Switch-Off</h2>
-<p>If monitoring is on and no trip has been detected for 3 hours, the App switches monitoring off and ends an active shift. The Accessibility Service stays enabled in Android settings until you turn it off.</p>
+<p>The App may end an active shift automatically after a period with no trips, and switches monitoring off after 3 hours with no trips. The Accessibility Service stays enabled in Android settings until you turn it off.</p>
 <h2>7. Data Sharing</h2>
 <p>Because we collect no data, there is nothing to share. We do not share information with ride-hailing platforms, advertisers, analytics providers or any third party. The App has no advertising and no third-party tracking.</p>
 <h2>8. If You Contact Us</h2>
